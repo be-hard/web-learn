@@ -1,10 +1,12 @@
 async是promise的语法糖封装，返回一个promise
 异步编程的终极方案：以同步的方式写异步,可读性强
-await关键字可以”暂停“async函数的执行
-await关键字可以同步获取promise的执行结果
 try/catch可以获取await所得到的错误
 
+await关键字可以”暂停“async函数的执行
+await关键字可以同步获取promise的执行结果
+
 并行Promise.all([promise1,promise2])
+
 
 
 

@@ -144,21 +144,69 @@ function bubbleSort(arr) {
   const len = arr.length;
   for (let i = 0; i < len; i++) {
     let ifSwap = false;
-    for (let j = len-1; j > i; j--) {
+    for (let j = len - 1; j > i; j--) {
       if (arr[j] < arr[j - 1]) {
         swap(arr, j, j - 1);
         ifSwap = true;
       }
     }
-    if(!ifSwap){
+    if (!ifSwap) {
       break;
     }
   }
   return arr;
 }
 // console.log(bubbleSort([11, 63, 11, 6, 42, 5, 4, 3, 7]));
-function str(pattern){
-  
+function str(pattern) {}
+function com(arr1, arr2) {
+  const sort1 = arr1.sort((x, y) => x - y);
+  const sort2 = arr2.sort((x, y) => x - y);
+  const len1 = sort1.length,
+    len2 = sort2.length;
+  let i = 0,
+    j = 0;
+  let pre = null;
+  let arr = [];
+  while (i < len1 && j < len2) {
+    const num1 = arr[1],
+      num2 = arr[2];
 
+    if (num1 < num2) {
+      i++;
+    } else if (num1 > num2) {
+      j++;
+    } else {
+      if (num1 !== pre) {
+        arr.push(num1);
+      }
+      i++;
+      j++;
+    }
+  }
+  return arr;
 }
+function com(arr1, arr2) {
+  const len1 = sort1.length,
+    len2 = sort2.length;
+  let i = 0,
+    j = 0;
+  let pre = null;
+  let arr = [];
+  while (i < len1 && j < len2) {
+    const num1 = arr[1],
+      num2 = arr[2];
 
+    if (num1 < num2) {
+      i++;
+    } else if (num1 > num2) {
+      j++;
+    } else {
+      if (num1 !== pre) {
+        arr.push(num1);
+      }
+      i++;
+      j++;
+    }
+  }
+  return arr;
+}
