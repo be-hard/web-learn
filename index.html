@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: YouSheBiaoTiHei;
+        src: url("./YouSheBiaoTiHei-2.ttf");
+        font-weight: normal;
+        font-style: normal;
+      }
+      #inner{
+        font-family: YouSheBiaoTiHei;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div id="inner">
+        1234567890. 每日必领进入权益（）选重抽卡x优惠券星石今元X再来个
+        一二三四五六七八九十百千万本日消费已满，权益已解锁单日消费满，即可激活权益
+      </div>
+    </div>
+
+    
+    <script src="./node_modules/axios/index.js"></script>
+    <script>
+      // console.log()
+      document.querySelector("#inner").addEventListener("click", function (e) {
+        console.log(e.target);
+      });
+      // const iframe = document.querySelector("#baidu");
+      // setTimeout(() => {
+      //   iframe.src = "http://localhost:52330/index.html";
+      //   setTimeout(() => {
+      //     console.log(iframe.contentWindow.name, "iframe");
+      //   }, 2000);
+      // }, 2000);
+    </script>
+  </body>
+</html>
