@@ -8,5 +8,11 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "koa": "^2.13.4",
+    "koa-mount": "^4.0.0",
+    "koa-static": "^5.0.0"
+  }
 }

@@ -1,0 +1,22 @@
+<html>
+  <head> </head>
+  <body>
+    <link rel="stylesheet" href="./static/index.css" />
+    hello world
+    <div class="result-wrap"></div>
+    <div class="btns">
+      <div class="scissor" data-name="scissor">剪刀</div>
+      <div class="stone" data-name="stone">石头</div>
+      <div class="cloth" data-name="cloth">布</div>
+    </div>
+    <script>
+      const ele = document.querySelector(".btns");
+      ele.addEventListener("click", function (e) {
+        const playerChoice = e.target.dataset.name;
+        console.log(playerChoice);
+        const res = fetch(`/game?playerAction=${playerChoice}`);
+        console.log(res);
+      });
+    </script>
+  </body>
+</html>

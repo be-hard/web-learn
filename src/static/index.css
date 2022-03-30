@@ -1,0 +1,17 @@
+.result-wrap {
+  width: 200px;
+  height: 200px;
+  overflow: auto;
+  background-color: coral;
+}
+.btns{
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.btns div {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: aquamarine;
+}
